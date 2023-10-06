@@ -1,0 +1,39 @@
+.education {
+    position: relative;
+    color: #fff;
+    width: 89%;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #222;
+    border-radius: 25px;
+}
+
+.classx {
+    background: rgba(210, 210, 210, 0.1);
+    padding: 2%;
+    margin: 2%;
+    border-radius: 0 50px;
+    /* box-shadow: 8px 8px 9px 10px black; */
+    transition: 0.5s;
+    /* background: linear-gradient(20deg, rgba(4, 228, 240, 0.462), rgba(94, 6, 181, 0.473)); */
+    border-image: linear-gradient(60deg, #0ab699, #4b129b) 1;
+}
+
+.classx:hover {
+    transform: translateX(25px);
+    background: #fff;
+    color: #111;
+}
+
+@media screen and (max-width:660px) {
+    .classx {
+        margin: 8%;
+    }
+}
+
+.classname {
+    color: darkred;
+}

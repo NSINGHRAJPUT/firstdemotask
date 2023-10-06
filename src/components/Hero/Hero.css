@@ -1,0 +1,221 @@
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-top: 5%;
+}
+
+.box .fm {
+  position: absolute;
+  inset: 4px;
+  background: #222;
+  padding: 50px 40px;
+  border-radius: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box {
+  position: relative;
+  width: 80vw;
+  height: 70vh;
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -100%;
+  width: 120vw;
+  height: 120vh;
+  background: linear-gradient(0deg, transparent, #9945ff, #45ffe3, #04590b);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -90%;
+  width: 120vw;
+  height: 120vh;
+  background: linear-gradient(0deg, transparent, #ff2770, #ff2, #45f3ff);
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.job_title {
+  margin-top: 2%;
+  font-size: 1.2em;
+}
+
+.hero_image {
+  border: 1px solid rgb(18, 14, 14);
+  border-radius: 20px;
+  padding: 5%;
+  margin: 2%;
+  width: 20vw;
+}
+
+.intro {
+  width: 60%;
+  margin-top: 2%;
+}
+
+.cv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.cv button {
+  background: transparent;
+  color: white;
+  margin: 4%;
+  width: 120%;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+.cv button:hover {
+  background: linear-gradient(to left, rgb(6, 171, 186), rgb(110, 3, 160));
+}
+
+@media screen and (max-width: 660px) {
+  .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+
+  .box .fm {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    position: relative;
+    width: 95vw;
+    height: 180vw;
+    background: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .box::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -100%;
+    width: 120vw;
+    height: 180vh;
+    background: linear-gradient(0deg, transparent, #9945ff, #45ffe3, #04590b);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -90%;
+    width: 120vw;
+    height: 180vh;
+    background: linear-gradient(0deg, transparent, #ff2770, #ff2, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: 3s;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .hero_image {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 8vh;
+  }
+
+  img {
+    width: 50vw;
+    border: 1px solid rgb(18, 14, 14);
+  }
+
+  .hero_intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv button {
+    width: 120%;
+    margin: 10%;
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero_intro {
+    font-size: small;
+  }
+
+  .hero_image {
+    margin: 0;
+  }
+}
+
+.name {
+  color: darkred;
+}

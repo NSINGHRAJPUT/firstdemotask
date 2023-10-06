@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* ///////////////////////////////BACKGROUND VIDEO//////////////////////// */
+.back-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh;
+  z-index: 0;
+  object-fit: cover;
+  background: black;
+}
+
+.projects {
+  font-size: 2em;
+  position: relative;
+  color: #0ca3de;
+  left: 5%;
+  width: fit-content;
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(60deg, #039aff, #0dff00) 1;
+  border-top: none;
+  border-left: none;
+  margin-top: 10vh;
+}
