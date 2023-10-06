@@ -14,8 +14,7 @@ function App() {
       <img src={image} alt="" className="back-img" />
       <Header />
       <Hero />
-      <h2 className="projects spaceX">Education details &nbsp;</h2>
-      hello there my name is neeraj
+
       <Footer />
     </div>
   );
